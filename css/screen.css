@@ -1,0 +1,243 @@
+
+/*-------------reset-------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1;
+  background:#fff; }
+
+ol, ul {
+  list-style: none; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+/*---------------------fonts------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Signika:300);
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url("../BebasNeue-webfont.eot");
+  src: url("../BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../BebasNeue-webfont.woff") format("woff"), url("../BebasNeue-webfont.ttf") format("truetype"), url("../BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*--------------------------------------------------------------*/
+body {
+  width: 90%;
+  min-width: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 1em;
+  font: 1em/1.2 "Signika", Arial, sans-serif;
+  font-weight: 300;
+  color: #504331; }
+/*----------------------header-------------------------------*/
+header {
+  text-align: center;
+  position: relative;
+  background-image: url(../images/slider-horizontal.jpg);
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+  background-size: 400%;
+  padding-bottom: 32.5%;
+  -webkit-animation: h_slide 24s ease-out infinite;
+  -moz-animation: h_slide 24s ease-out infinite;
+  animation: h_slide 24s ease-out infinite; }
+
+blockquote {
+  font-family: "Satisfy", serif;
+  font-size: 1.25em;
+  text-align: center;
+  margin: 1em 0; }
+
+h1, h2, .links {
+  font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif; 
+  font-weight:normal; 
+  text-transform:uppercase }
+
+h1 {
+  font-size: 2.75em;
+  background: white;
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: .25em; }
+
+h1:after {
+  content: "";
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: .5em;
+  z-index: -1;
+  border-top: 1px solid #504331;
+  border-bottom: 1px solid #504331; }
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: .5em; }
+
+p {
+  margin-bottom: 1em; }
+
+a {
+  text-decoration: none;
+  color: #6a9a9c;
+  -webkit-transition: .6s ease-in-out;
+  -moz-transition: .6s ease-in-out;
+  -o-transition: .6s ease-in-out;
+  -ms-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+ }
+  a:hover {
+    color: #98b9bb; }
+
+footer {
+  margin-top: 2em;
+  padding: .5em 0;
+  border-top: 1px solid #504331;
+  box-shadow: 0 -2px 0 white, 0 -3px 0 #504331; }
+
+.copyright {
+  text-align: center;
+  font-size: 0.875em; }
+
+.links {
+  background: url(../images/map.png) bottom center no-repeat;
+  padding-bottom: 177px; }
+/*--------------------retina display background image-------------------------------*/
+  @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .links {
+      background: url(../images/map@2x.png) bottom center no-repeat;
+      background-size: 300px 151px; } }
+
+@-webkit-keyframes h_slide {
+  0% {
+    background-position: 0% bottom; }
+
+  20% {
+    background-position: 0% bottom; }
+
+  25% {
+    background-position: 33.33333% bottom; }
+
+  45% {
+    background-position: 33.33333% bottom; }
+
+  50% {
+    background-position: 66.66667% bottom; }
+
+  70% {
+    background-position: 66.66667% bottom; }
+
+  75% {
+    background-position: 100% bottom; }
+
+  95% {
+    background-position: 100% bottom; }
+
+  100% {
+    background-position: 133.33% bottom; } }
+
+@-moz-keyframes h_slide {
+  0% {
+    background-position: 0% bottom; }
+
+  20% {
+    background-position: 0% bottom; }
+
+  25% {
+    background-position: 33.33333% bottom; }
+
+  45% {
+    background-position: 33.33333% bottom; }
+
+  50% {
+    background-position: 66.66667% bottom; }
+
+  70% {
+    background-position: 66.66667% bottom; }
+
+  75% {
+    background-position: 100% bottom; }
+
+  95% {
+    background-position: 100% bottom; }
+
+  100% {
+    background-position: 133.33% bottom; } }
+
+@keyframes h_slide {
+  0% {
+    background-position: 0% bottom; }
+
+  20% {
+    background-position: 0% bottom; }
+
+  25% {
+    background-position: 33.33333% bottom; }
+
+  45% {
+    background-position: 33.33333% bottom; }
+
+  50% {
+    background-position: 66.66667% bottom; }
+
+  70% {
+    background-position: 66.66667% bottom; }
+
+  75% {
+    background-position: 100% bottom; }
+
+  95% {
+    background-position: 100% bottom; }
+
+  100% {
+    background-position: 133.33% bottom; } }
+
+/*--------------------large screens layout-------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+  blockquote {
+    font-size: 1.75em;
+    padding: 1em 2em; }
+
+  .content {
+    position: relative; }
+
+  .main {
+    margin-right: 320px;
+    border-right: 1px solid #504331;
+    padding: .5em 20px .5em 0;
+    box-shadow: 2px 0 white, 3px 0 #504331; }
+
+  .links {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    text-align: right; } }
