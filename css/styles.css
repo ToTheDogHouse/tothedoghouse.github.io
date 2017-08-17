@@ -430,8 +430,8 @@ font-weight:600;
 }
 #portfolio .portfolio-filter > li a:hover,
 #portfolio .portfolio-filter > li a.active {
-  background: #E95D90;
-  color: #fff; 
+    background: #ffffff;
+  color: #522774; 
 } 
 #portfolio .portfolio-items {
   margin: -15px;
